@@ -44,11 +44,15 @@
   
   <div class="container">
   <div class="starter-template">
-    <ol class="breadcrumb" ng-if="breadcrumbs.length > 1">
+    <ol class="breadcrumb">
       <li ng-repeat="crumb in breadcrumbs">
-        <a href="#" ng-click="pickOption(crumb.link,crumb.title,$index)">{{crumb.title}}</a>
+        <ng-switch on="$last">
+          <span ng-switch-when="true">{{crumb.title}}</span>
+          <span ng-switch-default>
+            <a href="#" ng-click="pickOption(crumb.link,crumb.title,$index)">{{crumb.title}}</a>
+          </span>
+         </ng-switch>
       </li>
-      <!--li class="active">Active Crumb</li-->
     </ol>
     <p ng-if="q.text">{{q.text}}</p>
     <p class="buttons">

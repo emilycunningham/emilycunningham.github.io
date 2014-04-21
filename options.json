@@ -1,18 +1,41 @@
 {
-  "q0": {"text": "Are you single?", "options": [
-    {"link":"q1","title":"Single"},
-    {"link":"q2","title":"Not Single"}
+  "q0": {"text": "Is accessibility important (e.g. no stairs)?", "options": [
+    {"link":"q1","title":"Accessible"},
+    {"link":"q3","title":"Standard Accessibility"}
   ]},
-  "q1": {"text": "Do you have pets?", "options": [
-    {"link":"a1","title":"Pets"},
-    {"link":"a2","title":"No pets"}
+  "q1": {"text": "Is a garden important?", "options": [
+    {"link":"a1","title":"Garden"},
+    {"link":"q2","title":"No Garden"}
   ]},
-  "q2": {"text": "Do you have children?", "options": [
-    {"link":"a3","title":"Children"},
-    {"link":"a4","title":"No Children"}
+  "q2": {"text": "Do you want to live open plan?", "options": [
+    {"link":"a2","title":"Open Plan"},
+    {"link":"a3","title":"Closed Plan"}
   ]},
-  "a1": {"text":"Try a house."},
-  "a2": {"text":"Try a flat."},
-  "a3": {"text":"Try a home."},
-  "a4": {"text":"Try a apartment."}
+  "q3": {"text": "Do you live with dependents?", "options": [
+    {"link":"q4","title":"No Children"},
+    {"link":"q5","title":"Children in the Future"},
+    {"link":"a","title":"Children Now"}
+  ]},
+  "q4": {"text": "Is a garden important?", "options": [
+    {"link":"a1","title":"Garden"},
+    {"link":"q6","title":"No Garden"}
+  ]},
+  "q5": {"text": "Is a garden important?", "options": [
+    {"link":"q6","title":"Garden"},
+    {"link":"q2","title":"No Garden"}
+  ]},
+  "q6": {"text": "Is your budget limited for now?", "options": [
+    {"link":"a4","title":"Tight Budget"},
+    {"link":"a5","title":"Significant Budget"}
+  ]},
+  "q6": {"text": "Do you want to live open plan?", "options": [
+    {"link":"a6","title":"Open Plan"},
+    {"link":"a3","title":"Closed Plan"}
+  ]},
+  "a1": {"text":"Try a garden house."},
+  "a2": {"text":"Try a tenement."},
+  "a3": {"text":"Try the basic apartment."},
+  "a4": {"text":"Expandable House"},
+  "a5": {"text":"Bespoke House"},
+  "a6": {"text":"Duplex or tenement."}
 }
