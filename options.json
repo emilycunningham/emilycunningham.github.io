@@ -1,0 +1,18 @@
+{
+  "q0": {"question": "Are you single?", "options": [
+    {"link":"q1","title":"Single"},
+    {"link":"q2","title":"Not Single"}
+  ]},
+  "q1": {"question": "Do you have pets?", "options": [
+    {"link":"a1","title":"Pets"},
+    {"link":"a2","title":"No pets"}
+  ]},
+  "q2": {"question": "Do you have children?", "options": [
+    {"link":"a3","title":"Children"},
+    {"link":"a4","title":"No Children"}
+  ]},
+  "a1": {"result":"Try a house."},
+  "a2": {"result":"Try a flat."},
+  "a3": {"result":"Try a home."},
+  "a4": {"result":"Try a apartment."}
+}

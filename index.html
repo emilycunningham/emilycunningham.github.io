@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EMCArch Home Picker">
+  <meta name="author" content="EMCArch">
+  <!--link rel="shortcut icon" href="../../assets/ico/favicon.ico"-->
+  <title>EMCArch Home Picker</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+    body {
+      padding-top: 50px;
+    }
+    .starter-template {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body ng-controller="PickerCtrl">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">EMCArch Home Picker</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  <div class="container">
+  <div class="starter-template">
+    <ol class="breadcrumb" ng-if="breadcrumbs.length > 1">
+      <li ng-repeat="crumb in breadcrumbs">
+        <a href="#" ng-click="pickOption(crumb.link,crumb.title,$index)">{{crumb.title}}</a>
+      </li>
+      <!--li class="active">Active Crumb</li-->
+    </ol>
+    <p>{{q.result}}</p>
+    <p ng-if="q.question">{{q.question}}</p>
+    <p class="buttons">
+      <span ng-repeat="option in q.options">
+        <button class='btn btn-lg btn-primary'
+          ng-click="pickOption(option.link,option.title)">
+            {{option.title}}
+        </button>
+      </span>
+    </p>
+  </div>
+  </div><!-- /.container -->
+ 
+  <script src="angular.min.js"></script>
+  <script src="ui-bootstrap-tpls.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
