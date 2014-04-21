@@ -13,7 +13,7 @@ myApp.controller('PickerCtrl', function ($scope, $http) {
     }
   }
   $scope.reset = function() {
-    $scope.q = $scope.data['q0'];
-    $scope.breadcrumbs = [{"link":"q0","title":"Start"}];
+    $scope.q = $scope.data['q'];
+    $scope.breadcrumbs = [{"link":"q","title":"Start"}];
   }
 });
