@@ -50,8 +50,7 @@
       </li>
       <!--li class="active">Active Crumb</li-->
     </ol>
-    <p>{{q.result}}</p>
-    <p ng-if="q.question">{{q.question}}</p>
+    <p ng-if="q.text">{{q.text}}</p>
     <p class="buttons">
       <span ng-repeat="option in q.options">
         <button class='btn btn-lg btn-primary'
