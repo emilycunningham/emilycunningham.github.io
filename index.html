@@ -55,6 +55,7 @@
       </li>
     </ol>
     <p ng-if="q.text">{{q.text}}</p>
+    <img ng-if="q.img" ng-src="{{q.img}}">
     <p class="buttons">
       <span ng-repeat="option in q.options">
         <button class='btn btn-primary'
