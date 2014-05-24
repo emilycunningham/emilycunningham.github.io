@@ -16,4 +16,7 @@ myApp.controller('PickerCtrl', function ($scope, $http) {
     $scope.q = $scope.data['q'];
     $scope.breadcrumbs = [{"link":"q","title":"Start"}];
   }
+  $scope.checkArray = function(obj) {
+    return Array.isArray(obj);
+  }
 });
