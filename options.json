@@ -1,43 +1,30 @@
 {
-  "q": {"text": "Is accessibility important?", "options": [
-    {"link":"qy","title":"Accessible"},
-    {"link":"qn","title":"Standard Accessibility"}
+  "q0": {"text": "Do you or any of your family have difficulty using stairs?", "options": [
+    {"link":"qy","title":"Single level"},
+    {"link":"qn","title":"Home with stairs"}
   ]},
-  "qy": {"text": "Is a garden important?", "options": [
-    {"link":"a1","title":"Garden"},
+  "qy": {"text": "Is private outside space important?", "options": [
+    {"link":"/homes/5-garden-bungalow","title":"Garden"},
     {"link":"qyn","title":"No Garden"}
   ]},
-  "qyn": {"text": "Do you want to live open plan?", "options": [
-    {"link":"a2","title":"Open Plan"},
-    {"link":"a3","title":"Standard Plan"}
+  "qyn": {"text": "Would you be happy with open plan living areas?", "options": [
+    {"link":"/homes/8-tenement","title":"Open Plan"},
+    {"link":"/homes/6-basic-flat","title":"Standard Plan"}
   ]},
-  "qn": {"text": "Do you have children or dependents?", "options": [
-    {"link":"qnn","title":"No Children"},
-    {"link":"qnm","title":"Children in the Future"},
-    {"link":"a0","title":"Children Now"}
+  "qn": {"text": "Is private outside space important?", "options": [
+    {"link":"/homes/5-garden-bungalow","title":"Garden"},
+    {"link":"qny","title":"No Garden"}
   ]},
-  "qnn": {"text": "Is a garden important?", "options": [
-    {"link":"a1","title":"Garden"},
-    {"link":"qnnn","title":"No Garden"}
+  "qny": {"text": "Would you be happy with open plan living areas?", "options": [
+    {"link":"qnyy","title":"Open Plan"},
+    {"link":"/homes/1-basic-house","title":"Standard Plan"}
   ]},
-  "qnm": {"text": "Is a garden important?", "options": [
-    {"link":"qnmy","title":"Garden"},
-    {"link":"qnnn","title":"No Garden"}
+  "qnyy": {"text": "Is your budget limited for now?", "options": [
+    {"link":"/homes/3-expandable-house","title":"Tight Budget"},
+    {"link":"qnyyn","title":"Budget Available"}
   ]},
-  "qnmy": {"text": "Is your budget limited for now?", "options": [
-    {"link":"a4","title":"Tight Budget"},
-    {"link":"a5","title":"Significant Budget"}
-  ]},
-  "qnnn": {"text": "Do you want to live open plan?", "options": [
-    {"link":"a6","title":"Open Plan"},
-    {"link":"a3","title":"Standard Plan"}
-  ]},
-  "a0": {"text":"To Be Confirmed..."},
-  "a1": {"title":"Garden Bungalow","text":"The garden home is ideal for people with accessibility issues but still want a garden connection, with an internal courtyard and a large back garden this simple bungalow is never far away from beautiful views of nature and gardens."},
-  "a2": {"title":"Tenement","text":""},
-  "a3": {"title":"Basic Apartment","img":"assets/basic.jpg","text":""},
-  "a4": {"title":"Expandable House","img":"assets/expandable.jpg","text":["The expandable home grows as you and your family evolves.","All these homes start life as a simple two bedroom home but then increase as you and your family change ,as you save money and invest the home can expanded.","This prefabricated home has four additional elements which can be joined to the standard two bed structure to result in a four bedroom home."]},
-  "a5": {"title":"Bespoke House","text":"The bespoke home is ideal for buyers who have a clear sense of what they want in a home. The home owner chooses elements from a selection of prefabricated parts and can arrange and organise their home to suit their needs."},
-  "a6": {"title":"Duplex or Tenement","img":"assets/void%20flat.jpg","text":["The duplex flats  are a series of 2 bedroom duplex apartments and one bedroom single story apartments.","The duplex homes have a large open plan living space with the bedrooms on the first floor making a beautiful home for flat shares or first time buyers","The one bed homes have a large open planed living/ dining room with a storage unit separating the bedroom from the dining room creating both separate and free flowing space.","The selling point of these homes are the large windows which brings in a large amounts of natural light deep in to the heart of the home."]},
-  "a7": {"title":"Basic House","text":["The basic house has 3 bedrooms and is ideal for a family.","It  has a large living room to the front of the house giving the owners surveillance of the street outside. There is a large master bedroom upstairs, a twin room and a single room. The storage is split between the two bed rooms  and under the stairs.","The unique selling point of this house type is the house facade; there are four front elevation components that allow a combination of different window arrangements to make each house different and unique."]}
+  "qnyyn": {"text": "Do you have a clear vision for your home?", "options": [
+    {"link":"/homes/4-bespoke-house","title":"Customised"},
+    {"link":"/homes/2-compact-house","title":"Standard"}
+  ]}
 }

@@ -10,18 +10,25 @@
   <title>Emily Cunningham Home Picker</title>
   <link rel="stylesheet" href="bootstrap.min.css">
   <style>
-    .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+    .nav, .pagination, .carousel, .panel-title a {
+      cursor: pointer;
+    }
     body {
       padding-top: 50px;
     }
-    .starter-template {
+    .template {
       padding: 20px;
       text-align: center;
+    }
+    .contained {
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
     }
     img, object {
       max-width: 100%;
     }
-    .buttons button {
+    .buttons button, .buttons a {
       margin: 2px;
     }
   </style>
@@ -36,46 +43,27 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" ng-click="reset()">EMC Home Picker</a>
+        <a class="navbar-brand" href="#">EMC Home Picker</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <!--li><a href="#about">About</a></li-->
+          <!--li ng-class="{active:!q}"><a href="#/contact">Contact</a></li-->
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
   
   <div class="container">
-  <div class="starter-template">
-    <ol class="breadcrumb">
-      <li ng-repeat="crumb in breadcrumbs">
-        <ng-switch on="$last">
-          <span ng-switch-when="true">{{crumb.title}}</span>
-          <span ng-switch-default>
-            <a href="#" ng-click="pickOption(crumb.link,crumb.title,$index)">{{crumb.title}}</a>
-          </span>
-         </ng-switch>
-      </li>
-    </ol>
-    <h2 ng-if="q.title">{{q.title}}</h2>
-    <div ng-if="q.text && checkArray(q.text)"><p ng-repeat="txt in q.text">{{txt}}</p></div>
-    <p ng-if="q.text && !checkArray(q.text)">{{q.text}}</p>
-    <img ng-if="q.img" ng-src="{{q.img}}" width="400">
-    <p class="buttons">
-      <span ng-repeat="option in q.options">
-        <button class='btn btn-primary'
-          ng-click="pickOption(option.link,option.title)">
-            {{option.title}}
-        </button>
-      </span>
-    </p>
+  <div class="template">
+    <div ng-view></div>
   </div>
   </div><!-- /.container -->
  
   <script src="angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+  <script src="angular-touch.min.js"></script>
   <script src="ui-bootstrap-tpls.min.js"></script>
   <script src="app.js"></script>
 </body>

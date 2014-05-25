@@ -1,0 +1,13 @@
+  <div class="contained">
+    <h2 ng-if="home.title">{{home.title}}</h2>
+    <div ng-if="home.text && checkArray(home.text)"><p ng-repeat="txt in home.text">{{txt}}</p></div>
+    <p ng-if="home.text && !checkArray(home.text)">{{home.text}}</p>
+    <img ng-if="home.img" ng-src="{{home.img}}">
+    <p class="buttons">
+      <span ng-repeat="(key,value) in homes">
+        <a href="#/homes/{{key}}" ng-if="value.title" class='btn btn-sm' ng-class="{'btn-primary':key==homeId()}">
+            {{value.title}}
+        </a>
+      </span>
+    </p>
+  </div>

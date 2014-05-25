@@ -1,0 +1,21 @@
+  <div class="contained">
+    <ol class="breadcrumb" ng-if="breadcrumbs">
+      <li ng-repeat="crumb in breadcrumbs">
+        <ng-switch on="$last">
+          <span ng-switch-when="true">{{crumb.title}}</span>
+          <span ng-switch-default>
+            <a href="#" ng-click="pickOption(crumb.link,crumb.title,$index)">{{crumb.title}}</a>
+          </span>
+         </ng-switch>
+      </li>
+    </ol>
+    <p ng-if="q.text">{{q.text}}</p>
+    <p class="buttons">
+      <span ng-repeat="option in q.options">
+        <button class='btn btn-primary'
+          ng-click="pickOption(option.link,option.title)">
+            {{option.title}}
+        </button>
+      </span>
+    </p>
+  </div>
